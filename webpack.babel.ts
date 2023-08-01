@@ -68,11 +68,6 @@ module.exports = /** @type { import('webpack').Configuration } */ {
     headers: { 'Access-Control-Allow-Origin': '*' },
     compress: true,
     port: 3000,
-    open: {
-      app: {
-        name: 'google-chrome',
-      },
-    },
     historyApiFallback: true,
   },
   module: {

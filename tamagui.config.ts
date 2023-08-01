@@ -3,6 +3,9 @@ import { createInterFont } from '@tamagui/font-inter'
 import { shorthands } from '@tamagui/shorthands'
 import { themes, tokens } from '@tamagui/themes'
 import { createMedia } from '@tamagui/react-native-media-driver'
+import { createAnimations } from '@tamagui/animations-css'
+
+const   animations= createAnimations({})
 
 const headingFont = createInterFont({
   size: {
@@ -49,7 +52,7 @@ const bodyFont = createInterFont(
 )
 
 export const config = createTamagui({
-  // animations,
+  animations,
   shouldAddPrefersColorThemes: true,
   themeClassNameOnRoot: true,
   shorthands,
